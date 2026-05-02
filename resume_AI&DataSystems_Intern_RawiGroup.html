@@ -243,6 +243,8 @@ body {
   margin-top: 1mm;
 }
 
+.exp-body {}
+
 .exp-top {
   display: flex;
   justify-content: space-between;
@@ -417,7 +419,7 @@ body {
     <div class="section">
       <div class="section-label">Profile</div>
       <p class="profile-text">
-        Final-year <strong>Software Engineering student</strong> (GPAX 3.76/4.0) and <strong>Google-certified Data Analyst</strong> with hands-on experience analyzing social media and digital platform performance, cleaning datasets, and translating data into actionable insights. Background in <strong>social media analytics, content performance tracking, and consumer behavior analysis</strong> — with practical experience producing reports and visualizations for non-technical stakeholders. An active TikTok user with strong interest in social commerce and platform trends, eager to support data-driven marketing decisions in a fast-paced consumer business.
+        Final-year <strong>Software Engineering student</strong> (GPAX 3.76/4.0) and <strong>Google-certified Data Analyst</strong> with hands-on experience designing and building <strong>real operational systems</strong> on Google Sheets, AppScript, and APIs — and transitioning them toward SQL-based architectures. Comfortable working with messy, imperfect data and iterating quickly in fast-moving environments. A strong AI tools user who applies ChatGPT and similar tools daily to solve real problems. Genuinely interested in how data, workflows, and real-world operations connect — and experienced building systems that non-technical teams can actually use.
       </p>
     </div>
 
@@ -440,10 +442,10 @@ body {
               </div>
               <div class="exp-org">BKK French Touch · Bangkok, Thailand</div>
               <ul class="exp-bullets">
-                <li>Tracked and analyzed social media engagement metrics, reach, and content performance across platforms — utilizing analytics to identify trends and optimize posting strategies.</li>
-                <li>Conducted SEO and indexing analysis using Google Search Console to identify visibility issues and recommend data-backed improvements.</li>
-                <li>Managed and organized 800+ media files, improving data structure and accessibility for internal team workflows.</li>
-                <li>Maintained website content via WordPress and Elementor, ensuring data consistency and structured information presentation.</li>
+                <li>Identified inefficiencies in internal data workflows and restructured 800+ media files into a logical, team-accessible system — reducing retrieval friction and improving operational consistency.</li>
+                <li>Maintained and updated web-based content systems (WordPress), performing data quality checks and ensuring structured, consistent information across multiple interfaces.</li>
+                <li>Used platform analytics tools to monitor performance metrics and produce structured reports, supporting iterative content and strategy decisions.</li>
+                <li>Applied systematic data entry practices and documentation standards, maintaining high data integrity across daily operational workflows.</li>
               </ul>
             </div>
           </div>
@@ -485,21 +487,21 @@ body {
           <div class="section-label">Projects</div>
 
           <div class="proj-item">
-            <div class="proj-title">BellaBeat Consumer Behavior Analysis</div>
-            <div class="proj-stack">R · Tidyverse · ggplot2</div>
-            <div class="proj-desc">Analyzed smart device user behavior data (30 users, 1,397 records) for a wellness consumer brand. Identified key engagement patterns — users averaged 993 min/day sedentary vs 19.7 min/day very active. Translated findings into product engagement recommendations presented via ggplot2 visualizations.</div>
+            <div class="proj-title">Telegram OCR Expense Tracker — AppScript + Sheets System</div>
+            <div class="proj-stack">Google Apps Script · Google Sheets · Telegram Bot API · Google Drive OCR</div>
+            <div class="proj-desc">Built a complete operational data system on Google Sheets and AppScript — the same stack Rawi Group currently uses. A Telegram bot handles data input (OCR + text commands), AppScript processes and validates entries, and a relational Sheets database stores structured records with Pivot Tables, SUMIFS analytics, and multi-tab reporting. Demonstrates full-cycle system design: input → validation → storage → reporting.</div>
           </div>
 
           <div class="proj-item">
-            <div class="proj-title">Automated Digital Analytics Pipeline</div>
-            <div class="proj-stack">Python · Pandas · SQLite · Google Search Console API · Chart.js</div>
-            <div class="proj-desc">Built pipeline to extract website search performance data, track content visibility trends over time, and present insights via an interactive browser dashboard — enabling ongoing monitoring of digital content performance beyond platform limitations.</div>
+            <div class="proj-title">Automated Analytics Pipeline — SQL & API Architecture</div>
+            <div class="proj-stack">Python · Pandas · SQLite · REST API · Chart.js · Docker</div>
+            <div class="proj-desc">Designed and built a modular 6-script pipeline that extracts data via REST API, transforms and validates with Pandas, and persists to a SQLite database — directly mirroring the SQL + API transition Rawi Group is undertaking. Outputs a browser-based dashboard for non-technical users. Demonstrates the architecture of a structured, web-based system replacing manual data workflows.</div>
           </div>
 
           <div class="proj-item">
-            <div class="proj-title">NYC Taxi Fare — Data Integrity & EDA</div>
+            <div class="proj-title">NYC Taxi Dataset — Messy Data Cleaning & EDA</div>
             <div class="proj-stack">Python · Pandas · NumPy · Matplotlib · Seaborn</div>
-            <div class="proj-desc">Cleaned 22,699-row dataset, engineered key features, and removed anomalous records (0.847%) through domain-knowledge filtering. Produced correlation analysis and distribution visualizations to surface actionable data insights.</div>
+            <div class="proj-desc">Processed a real 22,699-row dataset with negative values, incorrect types, and anomalous records — systematic quality checks removed 0.847% of data. Engineered derived features and produced visualizations to surface patterns. Demonstrates comfort with messy, imperfect real-world data.</div>
           </div>
         </div>
 
@@ -513,45 +515,44 @@ body {
           <div class="section-label">Skills</div>
 
           <div class="skill-group">
+            <div class="skill-group-name">Systems & Automation</div>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">Google Apps Script</span>
+              <span class="skill-tag highlight">Google Sheets</span>
+              <span class="skill-tag highlight">REST APIs</span>
+              <span class="skill-tag highlight">Workflow Design</span>
+              <span class="skill-tag">ETL Pipelines</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
             <div class="skill-group-name">Data & Analysis</div>
             <div class="skill-tags">
-              <span class="skill-tag highlight">Excel</span>
-              <span class="skill-tag highlight">Google Sheets</span>
-              <span class="skill-tag highlight">SQL</span>
+              <span class="skill-tag highlight">SQL · SQLite</span>
               <span class="skill-tag highlight">Python · Pandas</span>
-              <span class="skill-tag">R · Tidyverse</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Excel</span>
+              <span class="skill-tag">R</span>
             </div>
           </div>
 
           <div class="skill-group">
-            <div class="skill-group-name">Visualization & Reporting</div>
+            <div class="skill-group-name">Dashboards & Reporting</div>
             <div class="skill-tags">
               <span class="skill-tag highlight">Power BI</span>
-              <span class="skill-tag highlight">Tableau</span>
-              <span class="skill-tag">Google Slides</span>
-              <span class="skill-tag">Canva</span>
-              <span class="skill-tag">ggplot2</span>
+              <span class="skill-tag">Tableau</span>
               <span class="skill-tag">Chart.js</span>
+              <span class="skill-tag">Matplotlib</span>
             </div>
           </div>
 
           <div class="skill-group">
-            <div class="skill-group-name">Social & Digital</div>
+            <div class="skill-group-name">AI & Dev Tools</div>
             <div class="skill-tags">
-              <span class="skill-tag highlight">Social Media Analytics</span>
-              <span class="skill-tag">Google Search Console</span>
-              <span class="skill-tag">SEO Analysis</span>
-              <span class="skill-tag">WordPress</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <div class="skill-group-name">Pipeline & Tools</div>
-            <div class="skill-tags">
-              <span class="skill-tag">ETL Design</span>
-              <span class="skill-tag">SQLite</span>
+              <span class="skill-tag highlight">ChatGPT / AI Tools</span>
               <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Google APIs</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Telegram Bot API</span>
             </div>
           </div>
         </div>
