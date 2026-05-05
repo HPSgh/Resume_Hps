@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cover Letter — Htoo Pyae Shan | AUN</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+.print-tip { background:#1a2e45; color:#e2c46e; text-align:center; padding:10px; font-family:'Outfit',sans-serif; font-size:13px; letter-spacing:0.03em; }
+.print-tip strong { color:#fff; }
+@media print { .print-tip { display:none; } }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#e8e4de; font-family:'Outfit',sans-serif; display:flex; flex-direction:column; align-items:center; }
+.page { width:210mm; min-height:297mm; background:#faf8f5; position:relative; overflow:hidden; }
+@media print { body { background:white; } .page { width:210mm; height:297mm; box-shadow:none; margin:0; } @page { size:A4; margin:0; } }
+:root { --navy:#0c1922; --gold:#b8922e; --gold-light:#d4ac52; --cream:#faf8f5; --ink:#1a1a1a; --muted:#6b7580; --rule:#dbd5c8; --accent-bg:#f2ede5; }
+.accent-strip { position:absolute; left:0; top:0; bottom:0; width:5.5mm; background:var(--navy); }
+.accent-strip::after { content:''; position:absolute; left:0; top:0; width:100%; height:60mm; background:var(--gold); }
+.content { margin-left:13mm; margin-right:14mm; padding-top:10mm; padding-bottom:10mm; }
+.letterhead { display:flex; justify-content:space-between; align-items:flex-start; padding-bottom:6mm; border-bottom:0.4mm solid var(--navy); margin-bottom:8mm; }
+.sender-name { font-family:'Playfair Display',serif; font-size:22pt; font-weight:700; color:var(--navy); line-height:1; letter-spacing:-0.02em; }
+.sender-name span { color:var(--gold); }
+.sender-title { font-size:7.5pt; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); margin-top:1.5mm; }
+.sender-contacts { text-align:right; display:flex; flex-direction:column; gap:1mm; padding-top:1mm; }
+.contact-line { font-size:7pt; color:var(--ink); display:flex; align-items:center; justify-content:flex-end; gap:1.5mm; }
+.contact-line .dot { width:1.5mm; height:1.5mm; border-radius:50%; background:var(--gold); flex-shrink:0; }
+.meta { margin-bottom:7mm; }
+.date { font-size:8pt; color:var(--muted); margin-bottom:5mm; letter-spacing:0.04em; }
+.recipient-block { font-size:8pt; color:var(--ink); line-height:1.7; }
+.recipient-block strong { font-weight:600; color:var(--navy); }
+.subject { background:var(--accent-bg); border-left:1mm solid var(--gold); padding:3mm 4mm; margin-bottom:7mm; }
+.subject-label { font-size:6.5pt; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted); margin-bottom:1mm; }
+.subject-text { font-size:8.5pt; font-weight:600; color:var(--navy); }
+.salutation { font-size:8.5pt; font-weight:500; color:var(--navy); margin-bottom:4mm; }
+.body-text { font-size:8.2pt; color:#2a2a2a; line-height:1.75; font-weight:300; margin-bottom:4mm; }
+.body-text strong { font-weight:600; color:var(--navy); }
+.body-text em { color:var(--gold); font-style:normal; font-weight:500; }
+.highlight-box { border:0.3mm solid var(--rule); background:var(--accent-bg); padding:4mm 5mm; margin:5mm 0; display:grid; grid-template-columns:1fr 1fr; gap:2.5mm 6mm; }
+.highlight-item { display:flex; gap:2mm; align-items:flex-start; font-size:7.5pt; color:#2a2a2a; font-weight:300; line-height:1.5; }
+.highlight-item::before { content:'→'; color:var(--gold); font-size:7pt; flex-shrink:0; margin-top:0.5mm; }
+.personalise { border:0.3mm dashed var(--gold); background:rgba(184,146,46,0.04); padding:3mm 4mm; margin:4mm 0; border-radius:0.5mm; }
+.personalise-label { font-size:6pt; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:1mm; }
+.personalise-text { font-size:7.8pt; color:var(--muted); font-style:italic; line-height:1.6; }
+.closing { margin-top:6mm; font-size:8.2pt; color:#2a2a2a; font-weight:300; line-height:1.75; }
+.sign-name { font-family:'Playfair Display',serif; font-size:14pt; font-weight:500; color:var(--navy); margin-top:5mm; }
+.sign-title { font-size:7pt; color:var(--muted); letter-spacing:0.12em; text-transform:uppercase; margin-top:1mm; }
+.footer-bar { position:absolute; bottom:0; left:0; right:0; height:5mm; background:var(--navy); display:flex; align-items:center; justify-content:center; }
+.footer-bar span { font-size:5.5pt; color:rgba(255,255,255,0.4); letter-spacing:0.12em; font-family:'Outfit',sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="print-tip">
+  💡 To export as PDF: <strong>Ctrl+P</strong> → Destination: <strong>Save as PDF</strong> → Paper: <strong>A4</strong> → Margins: <strong>None</strong> → ✅ <strong>Background graphics</strong> → Save
+</div>
+
+<div class="page">
+  <div class="accent-strip"></div>
+  <div class="content">
+
+    <!-- LETTERHEAD -->
+    <div class="letterhead">
+      <div>
+        <div class="sender-name">Htoo <span>Pyae Shan</span></div>
+        <div class="sender-title">Programme Support &nbsp;·&nbsp; Data Analyst &nbsp;·&nbsp; Software Engineering Student</div>
+      </div>
+      <div class="sender-contacts">
+        <div class="contact-line"><span>pyaehtoo333@gmail.com</span><span class="dot"></span></div>
+        <div class="contact-line"><span>+66-84-197-7371</span><span class="dot"></span></div>
+        <div class="contact-line"><span>linkedin.com/in/htoopyaeshan</span><span class="dot"></span></div>
+        <div class="contact-line"><span>Bangkok, Thailand</span><span class="dot"></span></div>
+      </div>
+    </div>
+
+    <!-- DATE & RECIPIENT -->
+    <div class="meta">
+      <div class="date">May 2026</div>
+      <div class="recipient-block">
+        <strong>Hiring Committee</strong><br/>
+        Junior Programme Officer (STI Coordination)<br/>
+        ASEAN University Network (AUN) · Bangkok, Thailand
+      </div>
+    </div>
+
+    <!-- SUBJECT -->
+    <div class="subject">
+      <div class="subject-label">Re</div>
+      <div class="subject-text">Application — Junior Programme Officer (STI Coordination) · Budget Management & Stakeholder Relations</div>
+    </div>
+
+    <!-- BODY -->
+    <div class="salutation">Dear Hiring Committee,</div>
+
+    <p class="body-text">
+      I am writing to apply for the Junior Programme Officer position supporting the ASEAN–Japan STI Coordination project at AUN. As a final-year <strong>Software Engineering student</strong> (GPAX 3.76/4.0) with direct experience in administrative support, document management, stakeholder communication, and data reporting, I am confident in my ability to contribute meaningfully to your team's programme delivery from day one.
+    </p>
+
+    <p class="body-text">
+      What draws me to this role specifically is the intersection of <em>structured programme coordination and data-driven reporting</em> — two areas I have actively developed across my internship, part-time, and volunteer experience. Having grown up navigating multicultural environments as a Burmese national living and studying in Thailand, and having worked in English-language professional settings throughout my studies, I am genuinely comfortable operating across the ASEAN context this role requires.
+    </p>
+
+    <p class="body-text">
+      Beyond my technical background in Software Engineering, my recent experience as a Digital Marketing Intern at BKK French Touch has deeply shaped my approach to regional coordination. Working in a fast-paced, international environment in Bangkok, I learned that the success of any project depends on the seamless integration of technical tools and human communication. Whether I was optimizing SEO for a diverse brand portfolio or preparing comprehensive handover documentation, I focused on building systems that foster transparency and efficiency. I am eager to apply this 'bridge-building' mindset to the ASEAN-Japan STI partnership, ensuring that our technical collaborations are as organized as they are innovative.    </p>
+
+    <p class="body-text">
+      The core responsibilities of this role align closely with what I have practiced directly:
+    </p>
+
+    <div class="highlight-box">
+      <div class="highlight-item">Document & records management — maintained confidential document flow and organized filing systems for a university department (MFU School of Law, 2024–2025)</div>
+      <div class="highlight-item">Data entry & reporting — produced structured financial summaries and performance reports, maintaining high accuracy and audit-ready documentation standards</div>
+      <div class="highlight-item">Event logistics support — coordinated scheduling, material preparation, and on-day execution for university events under senior staff supervision</div>
+      <div class="highlight-item">Stakeholder communication — drafted materials, coordinated content, and distributed information across internal and external channels during internship at BKK French Touch</div>
+      <div class="highlight-item">M&E data collection — collected, cleaned, and analyzed participant data from 30 users across a structured research project, producing findings reports for stakeholders</div>
+      <div class="highlight-item">Multicultural teamwork — Burmese native, fluent English, working Thai — lived and studied in Thailand for 4+ years across diverse institutional environments</div>
+    </div>
+
+    <p class="body-text">
+      Beyond the administrative competencies, I bring an analytical background that adds value to the programme assessment component of this role — specifically the ability to collect, structure, and present M&E data clearly. My Google Data Analytics certification and project experience ensure I can support progress reporting and data-driven reviews with more than basic spreadsheet skills.
+    </p>
+
+    <p class="body-text">
+      I am available to commence in <strong>June 2026</strong> and am fully committed to the 6-month contract period, with strong interest in extension. I would welcome the opportunity to contribute to AUN's regional mission and to grow within an internationally respected organization working at the heart of ASEAN cooperation.
+    </p>
+
+    <!-- CLOSING -->
+    <div class="closing">
+      Thank you sincerely for your time and consideration. I look forward to the opportunity to discuss how my background can support your team's goals.<br/><br/>
+      Yours sincerely,
+      <div class="sign-name">Htoo Pyae Shan</div>
+      <div class="sign-title">Software Engineering Student &nbsp;·&nbsp; Google-Certified Data Analyst &nbsp;·&nbsp; Bangkok, Thailand</div>
+    </div>
+
+  </div>
+  <div class="footer-bar">
+    <span>HTOO PYAE SHAN &nbsp;·&nbsp; COVER LETTER &nbsp;·&nbsp; ASEAN UNIVERSITY NETWORK (AUN) &nbsp;·&nbsp; JUNIOR PROGRAMME OFFICER</span>
+  </div>
+</div>
+
+</body>
+</html>
