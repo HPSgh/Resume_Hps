@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FM: Coop/Pro-Ex 03-6 - Htoo Pyae Shan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&family=Oswald:wght@500;700&display=swap');
+        
+        :root {
+            /* Precise red color from the uploaded images */
+            --form-red: #C00000; 
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #333;
+            padding: 20px;
+            margin: 0;
+            color: var(--form-red);
+        }
+
+        .page {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 10mm 15mm;
+            margin: 10px auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top University Centered Text */
+        .uni-name-top {
+            text-align: center;
+            font-size: 10pt;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Top Horizontal Thin Line */
+        .top-thin-line {
+            border-top: 1px solid var(--form-red);
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .header-top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+
+        /* Left Side Titles */
+        .title-group {
+            flex: 1;
+        }
+
+        .main-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: 18pt;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 4px;
+            font-size: 10.5pt;
+        }
+
+        .label {
+            width: 85px;
+            font-weight: 400;
+        }
+
+        .dotted-line {
+            border-bottom: 1px solid var(--form-red); /* Actually solid thin red in the image */
+            opacity: 0.6;
+            flex-grow: 1;
+            padding-left: 5px;
+            height: 1.1em;
+        }
+
+        /* Right Side Form Code Block */
+        .form-code-block {
+            border-left: 1px dotted var(--form-red);
+            padding-left: 20px;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .form-code-text {
+            font-size: 11pt;
+            font-weight: bold;
+        }
+
+        .form-version-number {
+            font-size: 26pt;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            line-height: 1;
+            margin: 2px 0;
+        }
+
+        .form-update-date {
+            font-size: 9pt;
+        }
+
+        /* The Thick Red Bar */
+        .thick-bar {
+            background-color: var(--form-red);
+            height: 6px;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        /* Table Layout */
+        .tables-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        table {
+            width: 48.5%;
+            border-collapse: collapse;
+            font-size: 8.5pt;
+            table-layout: fixed;
+            color: var(--form-red);
+        }
+
+        th, td {
+            border: 1px solid var(--form-red);
+            padding: 3px 2px;
+            text-align: center;
+            height: 23px;
+        }
+
+        th {
+            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 15px;
+            font-size: 9pt;
+            font-weight: bold;
+        }
+
+        .signature-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            align-self: flex-end;
+            margin-right: 40px;
+        }
+
+        .sig-dots {
+            border-bottom: 1px dotted var(--form-red);
+            width: 200px;
+            margin-bottom: 5px;
+        }
+
+        .no-print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--form-red);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .page { margin: 0; box-shadow: none; page-break-after: always; }
+            .no-print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<button class="no-print-btn" onclick="window.print()">Print Document</button>
+
+<!-- PAGE 1 -->
+<div class="page">
+    <div class="uni-name-top">MAE FAH LUANG UNIVERSITY</div>
+    <div class="top-thin-line"></div>
+
+    <div class="header-top-row">
+        <div class="title-group">
+            <div class="main-title">INTERNS WORKING HOURS RECORD</div>
+            <div class="info-row" style="width: 90%;">
+                <span class="label">Intern Name</span>
+                <span class="dotted-line">Mr. Htoo Pyae Shan</span>
+            </div>
+            <div class="info-row" style="width: 90%;">
+                <span class="label">Student ID</span>
+                <span class="dotted-line">6531503144</span>
+            </div>
+        </div>
+
+        <div class="form-code-block">
+            <div class="form-code-text">FM : Coop / Pro-Ex</div>
+            <div class="form-version-number">03 - 6</div>
+            <div class="form-update-date">ปรับปรุง 01/02/2020</div>
+        </div>
+    </div>
+
+    <div class="thick-bar"></div>
+
+    <div class="tables-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 34%;">DD/MM/YY</th>
+                    <th style="width: 33%;">START TIME</th>
+                    <th style="width: 33%;">FINISH TIME</th>
+                </tr>
+            </thead>
+            <tbody id="table-1"></tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 34%;">DD/MM/YY</th>
+                    <th style="width: 33%;">START TIME</th>
+                    <th style="width: 33%;">FINISH TIME</th>
+                </tr>
+            </thead>
+            <tbody id="table-2"></tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <div>FM : COOP / PRO-EX 03-6</div>
+        <div>PAGE 1/2</div>
+    </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+    <div class="uni-name-top">MAE FAH LUANG UNIVERSITY</div>
+    <div class="top-thin-line"></div>
+
+    <div class="header-top-row">
+        <div class="title-group">
+            <div class="main-title">INTERNS WORKING HOURS RECORD</div>
+        </div>
+    </div>
+
+    <div class="tables-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 34%;">DD/MM/YY</th>
+                    <th style="width: 33%;">START TIME</th>
+                    <th style="width: 33%;">FINISH TIME</th>
+                </tr>
+            </thead>
+            <tbody id="table-3"></tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 34%;">DD/MM/YY</th>
+                    <th style="width: 33%;">START TIME</th>
+                    <th style="width: 33%;">FINISH TIME</th>
+                </tr>
+            </thead>
+            <tbody id="table-4"></tbody>
+        </table>
+    </div>
+
+    <div class="signature-area">
+        <div class="sig-dots"></div>
+        <div style="font-size: 9pt;">Supervisor's Signature</div>
+    </div>
+
+    <div class="footer">
+        <div>FM : COOP / PRO-EX 03-6</div>
+        <div>PAGE 2/2</div>
+    </div>
+</div>
+
+<script>
+    const startTime = "09:30";
+    const finishTime = "18:00";
+    const workingDates = [];
+    
+    function generateDates() {
+        // Range: Jan 5, 2026 to April 24, 2026
+        const start = new Date(2026, 0, 5);
+        const end = new Date(2026, 3, 24);
+        let current = new Date(start);
+        while(current <= end) {
+            const dayOfWeek = current.getDay();
+            if(dayOfWeek !== 0 && dayOfWeek !== 6) {
+                const dateStr = `${current.getDate().toString().padStart(2, '0')}/${(current.getMonth() + 1).toString().padStart(2, '0')}/26`;
+                workingDates.push({ date: dateStr, start: startTime, finish: finishTime });
+            }
+            current.setDate(current.getDate() + 1);
+        }
+    }
+
+    function fillTable(id, startIndex) {
+        const tbody = document.getElementById(id);
+        const data = workingDates.slice(startIndex, startIndex + 32);
+        // Page 1 tables look like they have ~32 rows
+        for(let i = 0; i < 32; i++) {
+            const item = data[i];
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${item ? item.date : '&nbsp;'}</td>
+                <td>${item ? item.start : '&nbsp;'}</td>
+                <td>${item ? item.finish : '&nbsp;'}</td>
+            `;
+            tbody.appendChild(row);
+        }
+    }
+
+    generateDates();
+    fillTable('table-1', 0);
+    fillTable('table-2', 32);
+    fillTable('table-3', 64);
+    fillTable('table-4', 96);
+</script>
+</body>
+</html>
